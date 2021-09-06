@@ -1,0 +1,60 @@
+{%load static %}
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v1 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css'%}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'css/style.css'%}">
+	</head>
+
+	<body>
+
+		<div class="wrapper" style="background-image: url('../static/images/holiday.jpg');">
+			<div class="inner">
+				<div class="image-holder">
+					<img src="{% static '../static/images/media.jpg' %}" alt="">
+				</div>
+
+				<form action="/logged/" method="post">
+                     {%csrf_token%}
+
+					<h3>Login Now </h3>
+
+{%for message in messages %}
+              <p style="color: red;font-size:12px;background-color:beige;font-weight: bold ">{{message}}</p>
+                       {%endfor%}
+					<div class="form-wrapper">
+						<input type="text" placeholder="Username" class="form-control" id="username" name="username">
+						<i class="zmdi zmdi-account"></i>
+
+					</div>
+
+					<div class="form-wrapper">
+
+						<input type="password" placeholder="Enter your password" class="form-control" id="Password" name="Password">
+						<i class="zmdi zmdi-lock"></i>
+					</div>
+					<button>Login
+						<i class="zmdi zmdi-arrow-right"></i>
+
+					</button>
+
+				</form>
+             <a href="{% url 'insertion' %}" style="color:black; font-weight:900">Register</a>
+			</div>
+		</div>
+
+
+
+
+	</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+
+</html>

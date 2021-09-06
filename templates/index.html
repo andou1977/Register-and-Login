@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Colorlib Villa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,300,400|Playfair+Display:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css'%}">
+    <link rel="stylesheet" href="{% static 'css/aos.css'%}">
+
+    <link rel="stylesheet" href="{% static 'fonts/ionicons/css/ionicons.min.css'%}">
+    <link rel="stylesheet" href="{% static 'fonts/fontawesome/css/font-awesome.min.css'%}">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" href="{% static 'css/style1.css'%}">
+  </head>
+  <body>
+
+
+
+    <section class="site-hero overlay" style="background-image: url(../static/images/slider-2.jpg)">
+      <div class="container">
+        <div class="row site-hero-inner justify-content-center align-items-center">
+          <div class="col-md-10 text-center">
+            <h1 style="font-size:70px" class="heading" data-aos="fade-up">Welcome to <em style="color:red">Andou</em> Enterprise</h1>
+              <p class="sub-heading mb-5" data-aos="fade-up" data-aos-delay="100">Discover our world-class<span style="color:red"> hotel</span> &amp; <span style="color:red">restaurant</span>.</p>
+            <p data-aos="fade-up" data-aos-delay="100"><a href="{% url 'insertion' %}" class="btn uppercase btn-danger mr-md-2 mr-0 mb-3 d-sm-inline d-block">Register</a> <a href="{% url 'login' %}" class="btn uppercase   btn-danger d-sm-inline d-block">Login</a></p>
+          </div>
+        </div>
+        <!-- <a href="#" class="scroll-down">Scroll Down</a> -->
+      </div>
+    </section>
+    <!-- END section -->
+
+
+    <script src="{% static 'js/jquery-3.2.1.min.js'%}"></script>
+    <script src="{% static 'js/popper.min.js'%}"></script>
+    <script src="{% static 'js/bootstrap.min.js'%}"></script>
+    <script src="{% static 'js/owl.carousel.min.js'%}"></script>
+    <!-- <script src="js/jquery.waypoints.min.js"></script> -->
+    <script src="{% static 'js/aos.js'%}"></script>
+    <script src="{% static 'js/main.js'%}"></script>
+  </body>
+</html>
